@@ -5,4 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   base: '/cafeterias/',
+  assetsInclude: ['cafes.csv'],
+  server: {
+    open: true, // Opcional: abrir automáticamente la aplicación en el navegador
+  },
 });

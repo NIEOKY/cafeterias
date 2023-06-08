@@ -14,7 +14,21 @@ const Map = ({ cafes, warehouses }) => {
         attribution='Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
       />
       {cafes.map((cafe) => (
-        <Marker key={cafe.ID} position={[cafe.Latitud, cafe.Longitud]}>
+        <Marker
+          key={cafe.ID}
+          position={[cafe.Latitud, cafe.Longitud]}
+          icon={
+            new L.Icon({
+              iconUrl:
+                'https://static.vecteezy.com/system/resources/previews/010/160/674/original/coffee-icon-sign-symbol-design-free-png.png',
+
+              iconSize: [25, 41],
+              iconAnchor: [12, 41],
+              popupAnchor: [1, -34],
+              shadowSize: [41, 41],
+            })
+          }
+        >
           <Popup>
             <strong>{cafe.Nombre}</strong>
             <br />

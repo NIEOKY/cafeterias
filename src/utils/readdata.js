@@ -1,7 +1,7 @@
 import Papa from 'papaparse';
 
 const readData = async () => {
-  const response = await fetch('/src/data/cafes.csv');
+  const response = await fetch('/cafeterias/cafes.csv');
   const csvData = await response.text();
 
   const results = Papa.parse(csvData, {

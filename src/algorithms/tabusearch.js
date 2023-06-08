@@ -89,7 +89,7 @@ const runTabuSearch = async () => {
   const cafes = await readData();
 
   // Configuración de la búsqueda tabú
-  const maxIterations = 500;
+  const maxIterations = 10;
   const numWarehouses = 10;
   const tabuListSize = 10;
 
@@ -106,9 +106,8 @@ const runTabuSearch = async () => {
 
   // Bucle principal de la búsqueda tabú
   for (let iteration = 0; iteration < maxIterations; iteration++) {
-    if (iteration % 100 === 0) {
-      console.log('Iteración', iteration);
-    }
+    console.log('Iteración', iteration);
+
     let bestNeighbor = null;
     let bestNeighborEvaluation = null;
 
