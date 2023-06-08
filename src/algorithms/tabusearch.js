@@ -84,12 +84,12 @@ const generateNeighborhood = (solution) => {
   return neighborhood;
 };
 
-const runTabuSearch = async () => {
+const runTabuSearch = async (iterations) => {
   console.log('Iniciando búsqueda tabú...');
   const cafes = await readData();
 
   // Configuración de la búsqueda tabú
-  const maxIterations = 10;
+  const maxIterations = iterations;
   const numWarehouses = 10;
   const tabuListSize = 10;
 
