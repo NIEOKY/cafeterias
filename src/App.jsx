@@ -5,7 +5,7 @@ import readData from './utils/readdata';
 
 const App = () => {
   const [cafes, setCafes] = useState([]);
-  const [iteration, setIteration] = useState(100);
+  const [iteration, setIteration] = useState(20);
   const [warehouses, setWarehouses] = useState([]);
   var iterations = iteration;
 
