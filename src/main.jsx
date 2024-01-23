@@ -5,8 +5,8 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <p className="text-black w-full text-center text-2xl font-bold">
-      cofe warehouse optimization using tabu search
+    <p className="text-neutral-800 font-bold text-4xl text-center pt-10 shadow-md">
+      Coffe Warehouse Optimization Using Tabu Search
     </p>
     <App />
   </React.StrictMode>
